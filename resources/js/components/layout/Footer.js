@@ -12,7 +12,8 @@ const Footer = () => {
     if(window.location.pathname === '/admin'){
       setBoundary(true);
     }
-  }, [])
+  }, []);
+
   if(!boundary){
     return (
    
@@ -26,8 +27,8 @@ const Footer = () => {
           
            <div className="footer-left_icon">
               <a href="#"><FiInstagram className='icons'/> </a>
-           <a href="#"><FiFacebook className='icons'/> </a>
-           <a href="#"><FiTwitter className='icons'/></a>
+              <a href="#"><FiFacebook className='icons'/> </a>
+              <a href="#"><FiTwitter className='icons'/></a>
            </div>
            </div>
           
@@ -56,6 +57,9 @@ const Footer = () => {
     )
   }
   
+  if(boundary){
+    return <></>
+  }
 }
 
 export default Footer

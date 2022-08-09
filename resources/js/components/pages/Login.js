@@ -1,6 +1,18 @@
-import React from 'react'
+import React from 'react';
+import React, { useState } from "react";
+import { useNavigate} from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  let loginUser = (e) => {
+    if(email === 'demo@mbcon.ng' && password === 12345678){
+      navigate("/admin");
+    }
+  }
+
   return (
     <div  id="login" className="modal">
       
@@ -18,19 +30,19 @@ const Login = () => {
                 </div> */}
               <div className="row">
                 <div className="input-field col s12">
-                  <input id="email" type="email" className="validate" />
+                  <input id="email" type="email" className="validate" onChange={(val) => {setEmail(val.target.value)}}/>
                   <label for="email">Email</label>
                 </div>
               </div>
               <div className="row">
                 <div className="input-field col s12">
-                  <input id="password" type="password" className="validate " />
+                  <input id="password" type="password" className="validate " onChange={(val) => {setPassword(val.target.value)}}/>
                   <label for="password">Password</label>
                 </div>
               </div>
               
               <div className='hero-button'>
-                <a style={{"width":"100%"}}  href="admin"className="primary-bg btn register"> Login </a>
+                <a style={{"width":"100%"}}  href="#" className="primary-bg btn register" onClick={loginUser}> Login </a>
               </div>
 
             </form>

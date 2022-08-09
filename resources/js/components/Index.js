@@ -9,6 +9,7 @@ import About from './pages/About';
 import Membership from './pages/Membership';
 import Updates from './pages/Updates';
 import Contact from './pages/Contact';
+import AdminPage from './pages/AdminPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Route  path="/membership" element={<Membership />} />
                 <Route  path="/updates" element={<Updates />} />
                 <Route  path="/contact" element={<Contact />} />
+                <Route  path="/admin" element={<AdminPage />} />
                     
                 </Routes>    
             <Footer />

@@ -22,8 +22,10 @@ const AdminSidenav = () => {
       
         
     </ul>
-    <div className="legal">
-      &copy; 2022 by MBCON, All rights reserved
+    <div className="legal grey-text">
+      <small>
+        &copy; 2022 by MBCON, All rights reserved
+      </small>      
     </div>
     </section>
   )
