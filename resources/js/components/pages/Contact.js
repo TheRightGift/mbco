@@ -1,8 +1,13 @@
-import React from 'react'
+import React,{Fragment} from 'react'
+import Contacthero from '../layout/contactpagelayout/Contacthero'
+import ContactEmail from '../layout/contactpagelayout/ContactEmail'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <Fragment>
+      <Contacthero />
+      <ContactEmail />
+    </Fragment>
   )
 }
 

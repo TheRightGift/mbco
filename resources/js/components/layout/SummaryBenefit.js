@@ -13,7 +13,7 @@ const SummaryBenefit = () => {
         <h2 className='secondary-heading'>Membership Benefit</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero a officiis obcaecati sit nam est, voluptate maxime ex temporibus consectetur consequuntur quidem consequatur debitis modi neque tempore eum quis aperiam?</p>
         <div className='hero-button'>
-          <a className="primary-bg btn register">Learn More</a>
+          <a href="/membership" className="primary-bg btn register">Learn More</a>
           </div>
         </AnimationOnScroll>
         

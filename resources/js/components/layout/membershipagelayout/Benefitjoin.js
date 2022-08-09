@@ -22,7 +22,7 @@ const Benefitjoin = () => {
       </li>
     </ul>
 <div className='hero-button'>
-        <a  href="#" className="secondary-bg btn register">Be a member</a>
+<a href="#register" className="secondary-bg btn modal-trigger register">Become a member</a>
         </div></ AnimationOnScroll >
 
     </div>

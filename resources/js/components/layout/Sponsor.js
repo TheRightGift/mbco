@@ -12,10 +12,12 @@ import logo from "../layout/logo.png";
 
 
 const Sponsor = () => {
-  
+    
     useEffect(()=>{
       // Init Materialize JS
       M.AutoInit();
+      
+      
     })
   return (
     <section className='sponsors'>
@@ -27,7 +29,7 @@ const Sponsor = () => {
         </AnimationOnScroll>
    
      <AnimationOnScroll animateIn="animate__fadeIn">
-     <div className="carousel"  >
+     <div className="carousel " option={{duration:100}} >
     <a className="carousel-item" href="#one!"><img src={sponsor1} /></a>
     <a className="carousel-item" href="#two!"><img src={sponsor2} /></a>
     <a className="carousel-item" href="#three!"><img src={sponsor4} /></a>

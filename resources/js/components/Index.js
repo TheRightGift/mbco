@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import Navbar from './layout/Navbar';
-import Footer from './/layout/Footer';
+import Footer from './layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Membership from './pages/Membership';
