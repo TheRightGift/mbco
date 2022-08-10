@@ -265,19 +265,20 @@ body .footer-grid{
 }
 body .footer-info-list{
 display: flex;
-
-
+margin-bottom: 0.7vw;
 }
 body .info-text{
   margin-left: 10px;
+  font-size: 0.8rem;
 }
 body .footer-left_icon{
   margin-top:20px;
+  display: flex;
 }
 
 body .footer .icons{
   color: #10b4ab;
-  font-size: 25px;
+  font-size: 18px;
   transform: translateY(0px);
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -486,6 +487,9 @@ body .about-coperate-grid{
 body .about-copearte_item{
   text-align: center;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .about-copearte_item p{
   font-size: 12px;
@@ -525,9 +529,6 @@ body .aboutteam-img{
 body .aboutteam-img img{
   height: 100%;
 
-
-
- 
 }
 
 body .aboutteam-card{
@@ -539,16 +540,23 @@ body .aboutteam-card{
 body .aboutteam-content h3{
   font-size:20px;
   color: #fff;
+  margin: 1.7vh 0 0;
 }
 .aboutteam-content p{
   color: #f4f4f4;
+  font-size: 0.75rem;
 }
 body .aboutteam-social{
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+body .aboutteam-social a {
+  margin-right: 0.5vw;
 }
 body .aboutteam-social .icons{
  font-size: 20px;
- color: #fff;
+ color: #fff; 
 }
 body .aboutteam-social .icons:not(:first-child){
   
